@@ -13,10 +13,10 @@ enum Message { // TODO: define a few types of messages as used below
 }
 
 fn main() {
-    Message::Quit().print();
-    Message::Echo().print();
-    Message::Move().print();
-    Message::ChangeColor().print();
+    Message::Quit(()).print();
+    Message::Echo(()).print();
+    Message::Move(()).print();
+    Message::ChangeColor(()).print();
 }
 
 impl MessagePrintImpl of PrintTrait<Message> {
